@@ -1,0 +1,16 @@
+PODS:
+  - YuMeiAd (0.1.0)
+
+DEPENDENCIES:
+  - YuMeiAd (from `../`)
+
+EXTERNAL SOURCES:
+  YuMeiAd:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YuMeiAd: fbbbd10470a6e073b66b02219bd67b885e40e3bb
+
+PODFILE CHECKSUM: ebbc238264f9302e40b70aded87b3a1cd21946b1
+
+COCOAPODS: 1.7.3
