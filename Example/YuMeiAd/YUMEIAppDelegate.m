@@ -7,12 +7,30 @@
 //
 
 #import "YUMEIAppDelegate.h"
+#import "YUMEIViewController.h"
+#import <BUAdSDK/BUAdSDKManager.h>
+#import "BUAdSDK/BUSplashAdView.h"
+
+@interface YUMEIAppDelegate ()<BUSplashAdDelegate>
+
+@property (nonatomic, assign) CFTimeInterval startTime;
+
+@end
 
 @implementation YUMEIAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    YUMEIViewController *vc = [[YUMEIViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    nav.navigationBar.barStyle = UIBarStyleBlackOpaque;
+    //    nav.navigationBar.translucent = NO;
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
+    [BUAdSDKManager setAppID:@"5000546"];
+
     return YES;
 }
 

@@ -1,8 +1,9 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/YuMeiAd"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../YuMeiAd/Classes/Frameworks" "${PODS_ROOT}/Bytedance-UnionAD/Bytedance-UnionAd/Frameworks"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/YuMeiAd/YuMeiAd.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "YuMeiAd"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GDTMobSDK" "${PODS_ROOT}/Headers/Public/SDWebImage" $(SDKROOT)/usr/include/libxml2
+OTHER_LDFLAGS = $(inherited) -l"c++" -l"resolv" -l"sqlite3" -l"xml2" -l"z" -framework "AVFoundation" -framework "Accelerate" -framework "AdSupport" -framework "CoreLocation" -framework "CoreMedia" -framework "CoreMotion" -framework "CoreTelephony" -framework "ImageIO" -framework "MapKit" -framework "MediaPlayer" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "StoreKit" -framework "SystemConfiguration" -framework "UIKit" -framework "WebKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
 PODS_ROOT = ${SRCROOT}/Pods
+VALID_ARCHS = armv7 armv7s x86_64 arm64

@@ -16,15 +16,12 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/zzqhd'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '729020128@qq.com' => '729020128@qq.com' }
-  s.source           = { :git => 'https://github.com/zzqhd/YuMeiAd', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.source           = { :git => 'https://github.com/zzqhd/YuMeiAd.git', :tag => s.version.to_s }
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'YuMeiAd/Classes/**/*'
+  # s.source_files = 'YuMeiAd/Classes/**/*'
 
   # s.resource_bundles = {
   #   'YuMeiAd' => ['YuMeiAd/Assets/*.png']
@@ -34,10 +31,15 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.frameworks = 'UIKit', 'MapKit'
+  s.vendored_frameworks = 'YuMeiAd/Classes/Frameworks/YuMeiAd.framework'
 
   s.dependency 'GDTMobSDK' # 输入你想要的版本号
   s.dependency 'Bytedance-UnionAD'
   s.dependency 'SDWebImage'
 
-
+  #valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
+  #s.xcconfig = {
+  #    'VALID_ARCHS' =>  valid_archs.join(' '),
+  #}
+  
 end

@@ -1,0 +1,6 @@
+framework module YuMeiAd {
+  umbrella header "YuMeiAd.h"
+
+  export *
+  module * { export * }
+}
