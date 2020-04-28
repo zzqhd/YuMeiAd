@@ -1,8 +1,9 @@
 Pod::Spec.new do |s|
+<<<<<<< HEAD
   #名称
   s.name         = "YuMeiAd"
   #版本号
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   #简介
   s.summary      = "A short description of YuMeiAd"
   #项目主页地址
