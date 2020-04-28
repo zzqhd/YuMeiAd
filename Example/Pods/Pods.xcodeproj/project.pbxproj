@@ -255,6 +255,7 @@
 		159ED17378253564BC07F45CEC6E8305 /* GDTSDKDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSDKDefines.h; path = lib/GDTSDKDefines.h; sourceTree = "<group>"; };
 		161623B8717678FE3A630B8D8DF5EBA9 /* SDImageCoderHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCoderHelper.h; path = SDWebImage/Core/SDImageCoderHelper.h; sourceTree = "<group>"; };
 		173DC334949F8BA6522D08CB98D1E447 /* SDWebImageDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDefine.m; path = SDWebImage/Core/SDWebImageDefine.m; sourceTree = "<group>"; };
+		184FF107C5DC53093E50463526D9D23B /* YuMeiAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YuMeiAd.framework; path = YuMeiAd/YuMeiAd.framework; sourceTree = "<group>"; };
 		185C98E5952F5C7E770B94EFE83098B3 /* SDImageCacheConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = SDWebImage/Core/SDImageCacheConfig.m; sourceTree = "<group>"; };
 		1995F454C6A10B845B69AF2DE5F879BF /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/Core/SDImageCache.h; sourceTree = "<group>"; };
 		19C7D448DF09F2C5A6F69E7F1648CF30 /* SDFileAttributeHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDFileAttributeHelper.m; path = SDWebImage/Private/SDFileAttributeHelper.m; sourceTree = "<group>"; };
@@ -355,7 +356,6 @@
 		9C9DF922E1F6392DB72361116CCDCCA8 /* SDImageAssetManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAssetManager.h; path = SDWebImage/Private/SDImageAssetManager.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E3F8179FD237B6E6B73564C6C34E732 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/Core/NSData+ImageContentType.h"; sourceTree = "<group>"; };
-		9E451151522A769205CF8F6D7B2CDE0E /* YuMeiAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YuMeiAd.framework; path = YuMeiAd/Classes/Frameworks/YuMeiAd.framework; sourceTree = "<group>"; };
 		A04D7632E7D056F356025282E6F03FB1 /* GDTLogoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTLogoView.h; path = lib/GDTLogoView.h; sourceTree = "<group>"; };
 		A0608B638C55333305C050EE91947442 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/Core/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
 		A116B6172280F8461335872C63CBB17A /* GDTNativeExpressAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressAd.h; path = lib/GDTNativeExpressAd.h; sourceTree = "<group>"; };
@@ -455,14 +455,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01592EA1A56234C3A3EF44A0AFF30E2C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9E451151522A769205CF8F6D7B2CDE0E /* YuMeiAd.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		0E913BEFEF80BF731A5E195E07A712F6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -678,6 +670,14 @@
 			path = "../Target Support Files/Bytedance-UnionAD";
 			sourceTree = "<group>";
 		};
+		2AFB09C8A4A6D5A3F45698BC959B1398 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				184FF107C5DC53093E50463526D9D23B /* YuMeiAd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2C3F3498E2CAB559E1882BC0F50C6EF2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -815,7 +815,7 @@
 		F27C0BE9DB1451A4AA521E8545B619D0 /* YuMeiAd */ = {
 			isa = PBXGroup;
 			children = (
-				01592EA1A56234C3A3EF44A0AFF30E2C /* Frameworks */,
+				2AFB09C8A4A6D5A3F45698BC959B1398 /* Frameworks */,
 				E997123EC72E5D2F8AE22AD0A511A5AA /* Pod */,
 				4D8EBB69EDB0FD5392F47AB0C16BAAB1 /* Support Files */,
 			);

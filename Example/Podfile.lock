@@ -6,7 +6,7 @@ PODS:
   - SDWebImage (5.4.2):
     - SDWebImage/Core (= 5.4.2)
   - SDWebImage/Core (5.4.2)
-  - YuMeiAd (0.0.1):
+  - YuMeiAd (0.0.2):
     - Bytedance-UnionAD
     - GDTMobSDK
     - SDWebImage
@@ -28,7 +28,7 @@ SPEC CHECKSUMS:
   Bytedance-UnionAD: e044ef9fd7dfa8b974ac6b0bd026788164a8be57
   GDTMobSDK: b6c1643528f26e4ba6a1d719ae1b346ad6e70222
   SDWebImage: 4ca2dc4eefae4224bea8f504251cda485a363745
-  YuMeiAd: 7a7dd3fb299a87b8657277753c85b253692341b2
+  YuMeiAd: 4ebd2a22dd7a37d75b52afa9a298fd1d6387f265
 
 PODFILE CHECKSUM: 6cb0e42f39fa297c4337a8ee7d229a0d11cdc7e2
 

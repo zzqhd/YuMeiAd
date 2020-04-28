@@ -36,16 +36,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- 加载广告
-
- @param rootVC   可填可不填，不填就自己拿WindowRootViewController
+ 加载开屏广告
  @param nowController 当前接收代理的的controller或者是View
  */
-- (void) loadYumeiAdWithRootViewController: (id)rootVC AndDelegateReceiveController: (id)nowController;
+- (void) loadYumeiAdWithDelegateReceiveController: (id)nowController;
 
 
 
 + (id) getValueForKey: (NSString *)customerKey;
+
+
+/**
+ 调用消失显示的window
+ */
+- (void) dismissAdView;
 
 @end
 
